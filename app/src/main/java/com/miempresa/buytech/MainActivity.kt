@@ -16,46 +16,52 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //Actualizar estado de checkbox
-        binding.raton.isChecked = Carrito.raton
-        binding.teclado.isChecked = Carrito.teclado
-        binding.altavoces.isChecked = Carrito.altavoz
-        binding.usbCable.isChecked = Carrito.cable
-
-
-
         binding.raton.setOnCheckedChangeListener{_, isChecked ->
-            if(isChecked)
+            if(isChecked) {
                 Toast.makeText(this, "Ratón añadido", Toast.LENGTH_SHORT).show()
-            else
+                Carrito.raton = isChecked
+            }else {
                 Toast.makeText(this, "Ratón eliminado", Toast.LENGTH_SHORT).show()
+                Carrito.raton = false
+            }
         }
 
         binding.teclado.setOnCheckedChangeListener{_, isChecked ->
-            if(isChecked)
+            if(isChecked) {
                 Toast.makeText(this, "Teclado añadido", Toast.LENGTH_SHORT).show()
-            else
+                Carrito.teclado = isChecked
+            }else {
                 Toast.makeText(this, "Teclado eliminado", Toast.LENGTH_SHORT).show()
+                Carrito.teclado = false
+            }
         }
 
         binding.altavoces.setOnCheckedChangeListener{_, isChecked ->
-            if(isChecked)
+            if(isChecked) {
                 Toast.makeText(this, "Altavoces añadidos", Toast.LENGTH_SHORT).show()
-            else
+                Carrito.altavoz = isChecked
+            }else {
                 Toast.makeText(this, "Altavoces eliminados", Toast.LENGTH_SHORT).show()
+                Carrito.altavoz = false
+            }
         }
 
         binding.usbCable.setOnCheckedChangeListener{_, isChecked ->
-            if(isChecked)
+            if(isChecked) {
                 Toast.makeText(this, "Cable USB añadido", Toast.LENGTH_SHORT).show()
-            else
+                Carrito.cable = isChecked
+            }else {
                 Toast.makeText(this, "Cable USB eliminado", Toast.LENGTH_SHORT).show()
+                Carrito.cable = false
+            }
         }
 
         binding.btSiguiente.setOnClickListener{
             if(binding.raton.isChecked || binding.teclado.isChecked || binding.altavoces.isChecked || binding.usbCable.isChecked) {
-                if (binding.btEnvio.isChecked || binding.btRecoger.isChecked)
-                    startActivity(Intent(this, DatosActivity::class.java))
+                if (binding.btRecoger.isChecked)
+                    startActivity(Intent(this, RecogerActivity::class.java))
+                else if (binding.btEnvio.isChecked)
+                    startActivity(Intent(this, EnviarActivity::class.java))
                 else
                     Toast.makeText(this,"Debe seleccionar una forma de entrega", Toast.LENGTH_SHORT).show()
             }else

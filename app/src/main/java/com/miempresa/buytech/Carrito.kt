@@ -12,18 +12,41 @@ object Carrito {
     var cable = false
 
 
-    fun compra() {
+    fun seleccionar(): String{
+
+        var txRaton = ""
+        var txTeclado = ""
+        var txAltavoz = ""
+        var txCable = ""
 
         if(raton)
-            raton = true
-
+            txRaton = "Ha seleccionado un ratón\n"
         if(teclado)
-            teclado = true
-
+            txTeclado = "Ha seleccionado un teclado\n"
         if(altavoz)
-            altavoz = true
-
+            txAltavoz = "Ha seleccionado un altavoz\n"
         if(cable)
-            cable = true
+            txCable = "Ha seleccinado un cable USB\n"
+
+        return txRaton + txTeclado + txAltavoz + txCable
+    }
+
+    fun comprar() : String{
+
+        var txRaton = ""
+        var txTeclado = ""
+        var txAltavoz = ""
+        var txCable = ""
+
+        if(raton)
+            txRaton = "Ha comprado un ratón\n"
+        if(teclado)
+            txTeclado = "Ha comprado un teclado\n"
+        if(altavoz)
+            txAltavoz = "Ha comprado un altavoz\n"
+        if(cable)
+            txCable = "Ha comprado un cable USB\n"
+
+        return txRaton + txTeclado + txAltavoz + txCable
     }
 }
