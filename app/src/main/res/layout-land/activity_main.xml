@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/vertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imagenRaton"
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/raton"/>
+
+        <CheckBox
+            android:id="@+id/raton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:text="Ratón"/>
+
+        <ImageView
+            android:id="@+id/imagenAltavoz"
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            app:srcCompat="@drawable/altavoz"/>
+
+        <CheckBox
+            android:id="@+id/altavoces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:text="Altavoces"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/vertical1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imagenTeclado"
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            app:layout_constraintStart_toStartOf="@id/imagenRaton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/teclado"/>
+
+        <CheckBox
+            android:id="@+id/teclado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Teclado"/>
+
+        <ImageView
+            android:id="@+id/imagenUSB"
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            app:srcCompat="@drawable/usb"/>
+
+        <CheckBox
+            android:id="@+id/usbCable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Cable USB"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/grupoEnvio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/vertical2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/btEnvio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Envío a domicilio"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/btRecoger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Recoger en local"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@id/vertical2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grupoEnvio" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

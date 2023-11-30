@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Buy tech</string>
+    <string name="raton">Mouse</string>
+    <string name="teclado">Keyboard</string>
+    <string name="altavoces">Speakers</string>
+    <string name="usbCable">USB cable</string>
+    <string name="btRecoger">Pick up locally</string>
+    <string name="btEnvio">Home delivery</string>
+    <string name="btSiguiente">Next</string>
+    <string name="etNombre">Name and surname</string>
+    <string name="etDni">DNI</string>
+    <string name="etEmail">Email</string>
+    <string name="etDireccion">Address</string>
+    <string name="btConfirmar">Confirm data</string>
+    <string name="btComprar">Buy</string>
+    <string name="ratonAnadido">Add mouse</string>
+    <string name="ratonEliminado">Mouse removed</string>
+    <string name="tecladoAnadido">Add keyboard</string>
+    <string name="tecladoEliminado">Keyboard removed</string>
+    <string name="altavozAnadido">Add speakers</string>
+    <string name="altavozEliminado">Speakers removed</string>
+    <string name="cableAnadido">Add USB cable</string>
+    <string name="cableEliminado">USB cable removed</string>
+    <string name="formaEntrega">You must select a delivery method</string>
+    <string name="productos">There are no products selected</string>
+    <string name="rellenarDatos">You must fill in your personal information to complete the purchase</string>
+    <string name="resumen">Purchase summary</string>
+    <string name="cerrar">Close</string>
+    <string name="pedido">Order placed successfully</string>
+    <string name="ratonSeleccionado">You have selected a mouse</string>
+
+</resources>
