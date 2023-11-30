@@ -1,6 +1,5 @@
 package com.miempresa.buytech
 
-import android.widget.Toast
 
 /**
  * Objeto que representa el carrito de la compra
@@ -20,7 +19,7 @@ object Carrito {
         var txCable = ""
 
         if(raton)
-            txRaton = "Ha seleccionado un ratón\n"
+            //txRaton = getString(R.string.ratonSeleccionado)
         if(teclado)
             txTeclado = "Ha seleccionado un teclado\n"
         if(altavoz)

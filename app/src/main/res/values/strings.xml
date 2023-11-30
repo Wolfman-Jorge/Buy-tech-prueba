@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">Buy tech</string>
+    <string name="raton">Ratón</string>
+    <string name="teclado">Teclado</string>
+    <string name="altavoces">Altavoces</string>
+    <string name="usbCable">Cable USB</string>
+    <string name="btRecoger">Recoger en local</string>
+    <string name="btEnvio">Envío a domicilio</string>
+    <string name="btSiguiente">Siguiente</string>
+    <string name="etNombre">Nombre y apellidos</string>
+    <string name="etDni">DNI</string>
+    <string name="etEmail">Email</string>
+    <string name="etDireccion">Dirección</string>
+    <string name="btConfirmar">Confirmar datos</string>
+    <string name="btComprar">Comprar</string>
+    <string name="ratonAnadido">Ratón añadido</string>
+    <string name="ratonEliminado">Ratón eliminado</string>
+    <string name="tecladoAnadido">Teclado añadido</string>
+    <string name="tecladoEliminado">Teclado eliminado</string>
+    <string name="altavozAnadido">Altavoz añadido</string>
+    <string name="altavozEliminado">Altavoz eliminado</string>
+    <string name="cableAnadido">Cable añadido</string>
+    <string name="cableEliminado">Cable eliminado</string>
+    <string name="formaEntrega">Debe seleccionar una forma de entrega</string>
+    <string name="productos">No hay productos seleccionados</string>
+    <string name="rellenarDatos">Debe rellenar los datos personales para poder finalizar la compra</string>
+    <string name="resumen">Resumen de compra</string>
+    <string name="cerrar">Cerrar</string>
+    <string name="pedido">Pedido realizado con éxito</string>
+    <string name="ratonSeleccionado">Ha seleccionado un ratón</string>
 </resources>
